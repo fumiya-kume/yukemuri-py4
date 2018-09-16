@@ -2,15 +2,51 @@
 <html lang="ja">
     <head>
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/add_tag.js"></script>
         <link rel="stylesheet" href="css/list.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <title>hoge</title>
     </head>
     <body>
         <div class="list-holder">
             <div class="list">
                 <div class="column">
-                    <div class="column-header">Java(ここ変えてね)</div>
+                    <div class="column-header">
+                        <div class="title">Java</div>
+                    </div>
                 </div>
+                <div class="column">
+                    <div class="column-header">
+                        <div class="title">C#</div>
+                    </div>
+                </div>
+                <div class="add-holder">
+                    <div class="add-header" onclick="add_tag()">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="tag" onclick="tag(1)">
+                        <div class="text">
+                        Java
+                        </div>
+                    </div>
+                    <div class="tag" onclick="tag(2)">
+                        <div class="text">
+                        C#
+                        </div>
+                    </div>
+                    <div class="tag" onclick="tag(3)">
+                        <div class="text">
+                        HTML
+                        </div>
+                    </div>
+                    <div class="tag" onclick="tag(4)">
+                        <div class="text">
+                        JavaScript
+                        </div>
+                    </div>
+                    <div>
+                </div>
+
             </div>
         </div>
     </body>
