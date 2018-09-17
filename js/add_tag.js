@@ -24,4 +24,6 @@ function tag(i, name) {
 function delete_tag(i){
     $('.column[data-columnid='+ i +']').remove();
     $('.tag[data-id=' + i + ']').removeClass('tag-hidden');
+    var list_holder_width = $('.list-holder').width();
+    $('.list-holder').css({width: list_holder_width - 300});
 }

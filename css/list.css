@@ -119,4 +119,5 @@ body{
 .cross{
     top: 15px;
     right:15px;
+    cursor: pointer;
 }
