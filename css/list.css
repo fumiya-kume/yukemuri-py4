@@ -1,3 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width:100%;
+    overflow-x: scroll;
+}
+
+.list-holder{
+    width: 100%;
+}
+
 .list{
     width: 100%;
     height: 97%;
@@ -25,6 +39,13 @@
     position: relative;
 }
 
+.column-contents{
+    overflow: scroll;
+    height: calc(100% - 80px);
+    width: 100%;
+    position: relative;
+}
+
 .title{
     position: absolute;
     top: 50%;
@@ -41,7 +62,6 @@
     width: 300px;
     height: auto;
     float: left;
-
     position: relative;
 }
 
@@ -69,8 +89,11 @@
     width: 298px;
     height: 50px;
     position: relative;
-    display: none;
     cursor: pointer;
+}
+
+.tag-hidden{
+    display: none;
 }
 
 .text{
@@ -82,9 +105,18 @@
     transform : translate(-50%,-50%);
 }
 
+.tag-holder{
+    display: none;
+}
+
 .column-content{
     border-top: 1px solid #666666;
     height: 80px;
     width: 100%;
     cursor: pointer;
+}
+
+.cross{
+    top: 15px;
+    right:15px;
 }
