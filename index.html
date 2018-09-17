@@ -13,44 +13,49 @@
 <div class="list-holder">
     <div class="list">
         <div class="column-holder">
-            <div class="column" id="5">
+            <div class="column" data-columnid="5">
                 <div class="column-header">
                     <div class="title">Java</div>
+                    <i class="fas fa-times cross" onclick="delete_tag(5)"></i>
                 </div>
+                <ul class="column-contents" id="5">
+                </ul>
             </div>
-            <div class="column" id="2">
+            <div class="column" data-columnid="2">
                 <div class="column-header">
                     <div class="title">C#</div>
+                    <i class="fas fa-times cross" onclick="delete_tag(2)"></i>
                 </div>
+                <ul class="column-contents" id="2">
+                </ul>
             </div>
         </div>
         <div class="add-holder">
             <div class="add-header" onclick="add_tag()">
                 <i class="fas fa-plus"></i>
             </div>
-            <div class="tag" onclick="tag(5,'Java')">
-                <div class="text">
-                    Java
+            <div class="tag-holder">
+                <div class="tag tag-hidden" data-id="5" onclick="tag(5,'Java')">
+                    <div class="text">
+                        Java
+                    </div>
+                </div>
+                <div class="tag tag-hidden" data-id="2" onclick="tag(2,'C#')">
+                    <div class="text">
+                        C#
+                    </div>
+                </div>
+                <div class="tag" data-id="7" onclick="tag(7,'Python')">
+                    <div class="text">
+                        Python
+                    </div>
+                </div>
+                <div class="tag" data-id="374" onclick="tag(374,'Vim')">
+                    <div class="text">
+                        Vim
+                    </div>
                 </div>
             </div>
-            <div class="tag" onclick="tag(2,'C#')">
-                <div class="text">
-                    C#
-                </div>
-            </div>
-            <div class="tag" onclick="tag(7,'Python')">
-                <div class="text">
-                    Python
-                </div>
-            </div>
-            <div class="tag" onclick="tag(374,'Vim')">
-                <div class="text">
-                    Vim
-                </div>
-            </div>
-            <div>
-            </div>
-
         </div>
     </div>
 </div>
